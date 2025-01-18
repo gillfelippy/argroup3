@@ -1,12 +1,12 @@
 // Import necessary functions and objects
-import { loadGLTF } from "./libs/loader.js";
+import { loadGLTF } from "/libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
 
 // Function to initialize MindARThree instance
 const initializeMindAR = () => {
   return new window.MINDAR.IMAGE.MindARThree({
     container: document.body,
-    imageTargetSrc: './assets/target/goblin.mind', // Replace with your target image path
+    imageTargetSrc: '/assets/target/goblin.mind', // Replace with your target image path
   });
 };
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load and configure the model with animations
     const { model, mixer } = await loadAndConfigureModel(
-      './assets/model/page5.glb',
+      '/assets/model/page5.glb',
       { x: 0.15, y: 0.15, z: 0.15 },
       { x: 0, y: -0.4, z: 0 }
     );
